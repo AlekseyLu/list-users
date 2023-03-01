@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.newPerson {
+  margin-bottom: 40px;
+}
+
+.suptitle {
+  text-align: center;
+}
+
+.newPersonForm {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.error-message {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #f82d2d;
+}
+
+.btn {
+  margin: 0 auto;
+}
+
+.none {
+  visibility: hidden;
+}
+
+.table__name,
+.table__faculty,
+.table__age,
+.table__date-start {
+  cursor: pointer;
+}
+
+#sort-name,
+#sort-faculty,
+#sort-year,
+#sort-date-start {
+  display: inline-block;
+}
+
+.table__name:hover #sort-name,
+.table__faculty:hover #sort-faculty,
+.table__age:hover #sort-year,
+.table__date-start:hover #sort-date-start {
+  border-radius: 6px;
+  outline: 1px solid #888;
+  outline-offset: 10px;
+}
+
+.box-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-input {
+  display: inline-block;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.btn-search {
+  margin: 0;
+}
+
+.add-cell {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+    <title>list of employees</title>
+  </head>
+  <body>
+    <section class="newPerson">
+      <div class="container">
+        <h2 class="suptitle">Добавить нового студента</h2>
+        <form action="#" class="newPersonForm row">
+          <div class="mb-3 col-4">
+            <label class="form-label">Фамилия</label>
+            <input
+              type="text"
+              class="form__surname form-control"
+              name="Фамилия"
+              value=""
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label class="form-label">Имя</label>
+            <input
+              type="text"
+              class="form__name form-control"
+              name="Имя"
+              value=""
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label class="form-label">Отчетсво</label>
+            <input
+              type="text"
+              class="form__fatherName form-control"
+              name="Отчетсво"
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label class="form-label">Дата рождения</label>
+            <input
+              type="date"
+              class="form__date form-control"
+              min="1900-01-01"
+              max="2023-01-01"
+              name="Дата рождения"
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label class="form-label">Начало обучения</label>
+            <select
+              class="form__date-start form-select"
+              name="Год начала обучения"
+            >
+              <option id="option-def" selected></option>
+            </select>
+          </div>
+          <div class="mb-3 col-4">
+            <label class="form-label">Факультет</label>
+            <input
+              type="text"
+              class="form__faculty form-control"
+              name="Факультет"
+            />
+          </div>
+
+          <span class="error-message none col-12">error message</span>
+          <button id="add-student" class="btn btn-primary btn-lg col-4">
+            Добавить студента
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="table-persons">
+      <div class="container">
+        <div class="row">
+          <div class="box-search mb-3 col-3">
+            <label class="input-search-descr form-label">Поиск по ФИО</label>
+            <input
+              type="text"
+              class="search-input search-name form-control"
+              name="search-name"
+            />
+          </div>
+          <div class="box-search mb-3 col-3">
+            <label class="input-search-descr form-label"
+              >Поиск по Факультету</label
+            >
+            <input
+              type="text"
+              class="search-input search-faculty form-control"
+              name="search-faculty"
+            />
+          </div>
+          <div class="box-search mb-3 col-3">
+            <label class="input-search-descr form-label"
+              >Поиск по году рождения</label
+            >
+            <input
+              type="number"
+              class="search-input search-date form-control"
+              name="search-date"
+            />
+          </div>
+          <div class="box-search mb-3 col-3">
+            <label class="input-search-descr form-label"
+              >Поиск по году начала обучения</label
+            >
+            <input
+              type="number"
+              class="search-input search-date-start form-control"
+              name="search-date-start"
+            />
+          </div>
+        </div>
+
+        <ul class="table__item row">
+          <li class="table__cell table__name col-4 mb-3">
+            <h6 id="sort-name" class="table__title">ФИО</h6>
+          </li>
+          <li class="table__cell table__faculty col-3 mb-3">
+            <h6 id="sort-faculty" class="table__title">Факультет</h6>
+          </li>
+          <li class="table__cell table__age col-3 mb-3">
+            <h6 id="sort-year" class="table__title">Дата рождения (возраст)</h6>
+          </li>
+          <li class="table__cell table__date-start col-2 mb-3">
+            <h6 id="sort-date-start" class="table__title">Годы обучения</h6>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
